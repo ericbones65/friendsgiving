@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friendsgiving 2026 · Confirma</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,600&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  /* Una sola atmósfera: noche, cobre y champán. Columna central tipo invitación impresa. */
+  --night:#0B0806; --panel:#15100C; --line:rgba(201,130,83,.45);
+  --copper:#D08A58; --ember:#C4551B; --champagne:#EAD7AE; --muted:#B9A786;
+  --display:'Bodoni Moda','Didot','Times New Roman',serif;
+  --body:'Jost','Helvetica Neue',Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--night);color:var(--champagne);font-family:var(--body)}
+body{background-image:radial-gradient(ellipse 80% 40% at 50% 100%,rgba(196,85,27,.18),transparent 70%)}
+main{max-width:560px;margin:0 auto;padding:20px 16px 56px;display:flex;flex-direction:column;gap:28px}
+.hero{text-align:center;padding:40px 18px 34px;border:1px solid var(--line);background:radial-gradient(ellipse 90% 55% at 50% 100%,rgba(196,85,27,.28),transparent 70%),#0E0A07;display:flex;flex-direction:column;align-items:center;gap:14px}
+.kicker{margin:0;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--muted)}
+.brand{margin:0;font-family:var(--display);font-weight:500;font-size:clamp(34px,11vw,60px);letter-spacing:1px;line-height:1;background:linear-gradient(100deg,#9A5226,#E3A674 25%,#B9683A 48%,#F3CBA3 65%,#C47A48 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.year{margin:-4px 0 0;font-family:var(--display);font-size:34px;letter-spacing:12px;padding-left:12px;color:var(--champagne)}
+.rule{width:60%;height:1px;background:var(--line)}
+.when{margin:0;font-weight:600;font-size:clamp(17px,5vw,22px);letter-spacing:2px;line-height:1.5}
+.when span{color:#F2A566}
+.where{margin:0;font-size:15px;letter-spacing:4px;line-height:1.7;color:var(--champagne)}
+.where span{color:var(--muted)}
+.sig{margin:6px 0 0;font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(19px,5.5vw,24px);color:var(--copper)}
+.poster{display:block;width:100%;height:auto;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.card{background:var(--panel);border:1px solid var(--line);padding:28px 22px;display:flex;flex-direction:column;gap:20px}
+h1{margin:0;font-family:var(--display);font-weight:500;font-size:34px;letter-spacing:2px;text-align:center;color:var(--copper);text-wrap:balance}
+.sub{margin:-8px 0 0;text-align:center;font-size:15px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+label{display:block;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+input[type=text]{width:100%;padding:14px 14px;font:inherit;font-size:18px;color:var(--champagne);background:#0E0A07;border:1px solid var(--line);border-radius:0;outline:none}
+input[type=text]:focus{border-color:var(--copper);box-shadow:0 0 0 2px rgba(208,138,88,.25)}
+input::placeholder{color:#7d6d55}
+.seg{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.seg button,.count button{font:inherit;font-size:16px;letter-spacing:2px;min-height:48px;cursor:pointer;background:transparent;color:var(--champagne);border:1px solid var(--line)}
+.seg button[aria-pressed=true]{background:var(--copper);color:#120A05;border-color:var(--copper);font-weight:600}
+.count{display:flex;align-items:center;gap:12px}
+.count button{width:52px;font-size:24px}
+.count output{flex:1;text-align:center;font-family:var(--display);font-size:34px;font-variant-numeric:tabular-nums}
+.hide{display:none}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 20px;background:var(--ember);color:#120A05;font-weight:600;font-size:17px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;box-shadow:0 12px 30px rgba(196,85,27,.35)}
+.cta:hover{background:#D86424}
+.cta svg{flex:none}
+.hint{margin:0;font-size:14px;line-height:1.5;color:var(--muted);text-align:center}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.links a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 10px;border:1px solid var(--line);color:var(--champagne);text-decoration:none;font-size:14px;letter-spacing:2px;text-transform:uppercase}
+.links a:hover{border-color:var(--copper);color:#fff}
+a:focus-visible,button:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
+.foot{text-align:center;font-size:12px;letter-spacing:4px;color:var(--muted)}
+@media (max-width:380px){.links{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="kicker">Te invitamos</p>
+    <h2 class="brand">FRIENDSGIVING</h2>
+    <p class="year">2026</p>
+    <div class="rule"></div>
+    <p class="when">VIERNES, 20 DE NOVIEMBRE<br><span>7:30 PM EN ADELANTE</span></p>
+    <p class="where">2117 CALLE DELFOS<br><span>GUAYNABO, PUERTO RICO</span></p>
+    <p class="sig">¡Trae lo que te vayas a beber, mi rey! 🥃</p>
+  </header>
+
+  <form class="card" id="f" novalidate>
+    <h1>¿Vienes, mi rey?</h1>
+    <p class="sub">Confirma en 10 segundos</p>
+
+    <div>
+      <label for="nombre">Tu nombre</label>
+      <input type="text" id="nombre" autocomplete="name" placeholder="Ej. Goldus" required>
+    </div>
+
+    <div>
+      <label id="lbl-va">¿Llegas?</label>
+      <div class="seg" role="group" aria-labelledby="lbl-va">
+        <button type="button" id="si" aria-pressed="true">Pa' allá voy</button>
+        <button type="button" id="no" aria-pressed="false">No puedo</button>
+      </div>
+    </div>
+
+    <div id="bloque-si">
+      <div>
+        <label id="lbl-cuantos">¿Cuántos van contándote a ti?</label>
+        <div class="count" role="group" aria-labelledby="lbl-cuantos">
+          <button type="button" id="menos" aria-label="Uno menos">−</button>
+          <output id="cuantos" aria-live="polite">1</output>
+          <button type="button" id="mas" aria-label="Uno más">+</button>
+        </div>
+      </div>
+    </div>
+
+    <a class="cta" id="enviar" href="#" target="_blank" rel="noopener">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+      Confirmar por WhatsApp
+    </a>
+    <p class="hint" id="hint">Se abre WhatsApp con tu confirmación ya escrita. Solo dale enviar.</p>
+  </form>
+
+  <div class="links">
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=2117+Calle+Delfos%2C+Guaynabo%2C+Puerto+Rico" target="_blank" rel="noopener">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+      Cómo llegar
+    </a>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Friendsgiving+2026&amp;dates=20261120T233000Z/20261121T050000Z&amp;location=2117+Calle+Delfos%2C+Guaynabo%2C+Puerto+Rico&amp;details=%C2%A1Trae+lo+que+te+vayas+a+beber%2C+mi+rey%21+%F0%9F%A5%83" target="_blank" rel="noopener">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
+      Al calendario
+    </a>
+  </div>
+
+  <p class="foot">BUENA COMIDA · BUENOS TRAGOS · MEJOR COMPAÑÍA</p>
+</main>
+
+<script>
+(function(){
+  // Número de WhatsApp del anfitrión (solo dígitos, con código 1). Vacío = el invitado escoge el chat.
+  var HOST = "17873546978";
+  var va = true, n = 1;
+  var $ = function(id){ return document.getElementById(id); };
+  function msg(){
+    var nombre = $('nombre').value.trim() || '(sin nombre)';
+    if (!va) return '🦃 Friendsgiving 2026\n' + nombre + ': no voy a poder llegar esta vez. ¡Que se den la gozá!';
+    return '🦃 Friendsgiving 2026 – CONFIRMO ✅\n' +
+      'Nombre: ' + nombre + '\n' +
+      'Vamos: ' + n + (n === 1 ? ' persona' : ' personas') + '\n' +
+      'Viernes 20 de noviembre, 7:30 PM – 2117 Calle Delfos, Guaynabo';
+  }
+  function update(){
+    $('cuantos').textContent = n;
+    $('bloque-si').classList.toggle('hide', !va);
+    $('si').setAttribute('aria-pressed', va);
+    $('no').setAttribute('aria-pressed', !va);
+    $('enviar').href = 'https://wa.me/' + HOST + '?text=' + encodeURIComponent(msg());
+    $('hint').textContent = HOST
+      ? 'Se abre WhatsApp con tu confirmación ya escrita. Solo dale enviar.'
+      : 'Se abre WhatsApp con tu confirmación ya escrita. Escoge el chat del anfitrión y dale enviar.';
+  }
+  $('si').onclick = function(){ va = true; update(); };
+  $('no').onclick = function(){ va = false; update(); };
+  $('menos').onclick = function(){ if (n > 1) { n--; update(); } };
+  $('mas').onclick = function(){ if (n < 12) { n++; update(); } };
+  $('nombre').oninput = update;
+  $('f').addEventListener('submit', function(e){ e.preventDefault(); });
+  update();
+})();
+</script>
+</body>
+</html>
